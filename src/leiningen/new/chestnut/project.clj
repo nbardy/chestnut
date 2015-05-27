@@ -24,6 +24,14 @@
 
   :uberjar-name "{{{name}}}.jar"
 
+
+  :clean-targets ["resources/public/js/app.js"
+                  "resources/public/js/out"
+                  "resources/public/js/out.js.map"
+                  "resources/public/js/app_test.js"
+                  "resources/public/js/test"
+                  "resources/public/js/test.js.map"]
+
   :cljsbuild {:builds {:app {:source-paths ["src/cljs"{{{cljx-cljsbuild-spath}}}]
                              :compiler {:output-to     "resources/public/js/app.js"
                                         :output-dir    "resources/public/js/out"
